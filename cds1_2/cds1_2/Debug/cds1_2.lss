@@ -1,0 +1,225 @@
+
+cds1_2.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  0000014e  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000000fa  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  0000014e  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000180  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000038  00000000  00000000  000001bc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000008c1  00000000  00000000  000001f4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 000007ee  00000000  00000000  00000ab5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000002b3  00000000  00000000  000012a3  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000054  00000000  00000000  00001558  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000402  00000000  00000000  000015ac  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000000a8  00000000  00000000  000019ae  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000028  00000000  00000000  00001a56  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	4b c0       	rjmp	.+150    	; 0x9c <__bad_interrupt>
+   6:	00 00       	nop
+   8:	49 c0       	rjmp	.+146    	; 0x9c <__bad_interrupt>
+   a:	00 00       	nop
+   c:	47 c0       	rjmp	.+142    	; 0x9c <__bad_interrupt>
+   e:	00 00       	nop
+  10:	45 c0       	rjmp	.+138    	; 0x9c <__bad_interrupt>
+  12:	00 00       	nop
+  14:	43 c0       	rjmp	.+134    	; 0x9c <__bad_interrupt>
+  16:	00 00       	nop
+  18:	41 c0       	rjmp	.+130    	; 0x9c <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	3f c0       	rjmp	.+126    	; 0x9c <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	3d c0       	rjmp	.+122    	; 0x9c <__bad_interrupt>
+  22:	00 00       	nop
+  24:	3b c0       	rjmp	.+118    	; 0x9c <__bad_interrupt>
+  26:	00 00       	nop
+  28:	39 c0       	rjmp	.+114    	; 0x9c <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	37 c0       	rjmp	.+110    	; 0x9c <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	35 c0       	rjmp	.+106    	; 0x9c <__bad_interrupt>
+  32:	00 00       	nop
+  34:	33 c0       	rjmp	.+102    	; 0x9c <__bad_interrupt>
+  36:	00 00       	nop
+  38:	31 c0       	rjmp	.+98     	; 0x9c <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	2f c0       	rjmp	.+94     	; 0x9c <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	2d c0       	rjmp	.+90     	; 0x9c <__bad_interrupt>
+  42:	00 00       	nop
+  44:	2b c0       	rjmp	.+86     	; 0x9c <__bad_interrupt>
+  46:	00 00       	nop
+  48:	29 c0       	rjmp	.+82     	; 0x9c <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	27 c0       	rjmp	.+78     	; 0x9c <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	25 c0       	rjmp	.+74     	; 0x9c <__bad_interrupt>
+  52:	00 00       	nop
+  54:	23 c0       	rjmp	.+70     	; 0x9c <__bad_interrupt>
+  56:	00 00       	nop
+  58:	21 c0       	rjmp	.+66     	; 0x9c <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	1f c0       	rjmp	.+62     	; 0x9c <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	1d c0       	rjmp	.+58     	; 0x9c <__bad_interrupt>
+  62:	00 00       	nop
+  64:	1b c0       	rjmp	.+54     	; 0x9c <__bad_interrupt>
+  66:	00 00       	nop
+  68:	19 c0       	rjmp	.+50     	; 0x9c <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	17 c0       	rjmp	.+46     	; 0x9c <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	15 c0       	rjmp	.+42     	; 0x9c <__bad_interrupt>
+  72:	00 00       	nop
+  74:	13 c0       	rjmp	.+38     	; 0x9c <__bad_interrupt>
+  76:	00 00       	nop
+  78:	11 c0       	rjmp	.+34     	; 0x9c <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	0f c0       	rjmp	.+30     	; 0x9c <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	0d c0       	rjmp	.+26     	; 0x9c <__bad_interrupt>
+  82:	00 00       	nop
+  84:	0b c0       	rjmp	.+22     	; 0x9c <__bad_interrupt>
+  86:	00 00       	nop
+  88:	09 c0       	rjmp	.+18     	; 0x9c <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+  98:	28 d0       	rcall	.+80     	; 0xea <main>
+  9a:	2d c0       	rjmp	.+90     	; 0xf6 <_exit>
+
+0000009c <__bad_interrupt>:
+  9c:	b1 cf       	rjmp	.-158    	; 0x0 <__vectors>
+
+0000009e <init_adc>:
+unsigned short read_adc();
+void show_adc(unsigned short data);
+
+void init_adc()
+{
+	ADMUX = 0x00; // AREF(+5V), 오른쪽 정렬, ADC0 채널 사용
+  9e:	17 b8       	out	0x07, r1	; 7
+	ADCSRA = 0x87; // ADC Enable, Single Conversion, 128분주
+  a0:	87 e8       	ldi	r24, 0x87	; 135
+  a2:	86 b9       	out	0x06, r24	; 6
+  a4:	08 95       	ret
+
+000000a6 <read_adc>:
+unsigned short read_adc()
+{
+	unsigned char adc_low, adc_high;
+	unsigned short value;
+
+	ADCSRA |= (1 << ADSC); // 변환 시작
+  a6:	86 b1       	in	r24, 0x06	; 6
+  a8:	80 64       	ori	r24, 0x40	; 64
+  aa:	86 b9       	out	0x06, r24	; 6
+	while ((ADCSRA & (1 << ADIF)) == 0); // 변환 완료 대기
+  ac:	34 9b       	sbis	0x06, 4	; 6
+  ae:	fe cf       	rjmp	.-4      	; 0xac <read_adc+0x6>
+
+	adc_low = ADCL;  // 반드시 먼저 읽기
+  b0:	24 b1       	in	r18, 0x04	; 4
+	adc_high = ADCH;
+  b2:	85 b1       	in	r24, 0x05	; 5
+
+	value = (adc_high << 8) | adc_low;
+  b4:	90 e0       	ldi	r25, 0x00	; 0
+  b6:	98 2f       	mov	r25, r24
+  b8:	88 27       	eor	r24, r24
+
+	return value;
+}
+  ba:	82 2b       	or	r24, r18
+  bc:	08 95       	ret
+
+000000be <show_adc>:
+
+void show_adc(unsigned short data)
+{
+	if (data > CDS_100LUX)
+  be:	81 3b       	cpi	r24, 0xB1	; 177
+  c0:	24 e0       	ldi	r18, 0x04	; 4
+  c2:	92 07       	cpc	r25, r18
+  c4:	10 f0       	brcs	.+4      	; 0xca <show_adc+0xc>
+	{
+		PORTA = 0x00; // 모두 OFF
+  c6:	1b ba       	out	0x1b, r1	; 27
+  c8:	08 95       	ret
+	}
+	else if (data > CDS_10LUX)
+  ca:	88 36       	cpi	r24, 0x68	; 104
+  cc:	23 e0       	ldi	r18, 0x03	; 3
+  ce:	92 07       	cpc	r25, r18
+  d0:	18 f0       	brcs	.+6      	; 0xd8 <show_adc+0x1a>
+	{
+		PORTA = 0x81; // 0000 0011 → LED 2개 ON
+  d2:	81 e8       	ldi	r24, 0x81	; 129
+  d4:	8b bb       	out	0x1b, r24	; 27
+  d6:	08 95       	ret
+	}
+	else if (data > CDS_1LUX)
+  d8:	89 35       	cpi	r24, 0x59	; 89
+  da:	92 40       	sbci	r25, 0x02	; 2
+  dc:	18 f0       	brcs	.+6      	; 0xe4 <show_adc+0x26>
+	{
+		PORTA = 0x55; // 0000 1111 → LED 4개 ON
+  de:	85 e5       	ldi	r24, 0x55	; 85
+  e0:	8b bb       	out	0x1b, r24	; 27
+  e2:	08 95       	ret
+	}
+	else
+	{
+		PORTA = 0xFF; // 1111 1111 → LED 8개 ON
+  e4:	8f ef       	ldi	r24, 0xFF	; 255
+  e6:	8b bb       	out	0x1b, r24	; 27
+  e8:	08 95       	ret
+
+000000ea <main>:
+}
+
+int main()
+{
+	unsigned short value;
+	DDRA = 0xff; // LED 출력 설정
+  ea:	8f ef       	ldi	r24, 0xFF	; 255
+  ec:	8a bb       	out	0x1a, r24	; 26
+	init_adc(); // ADC 초기화
+  ee:	d7 df       	rcall	.-82     	; 0x9e <init_adc>
+	while(1)
+	{
+		value = read_adc();  // ADC 변환값 읽기
+  f0:	da df       	rcall	.-76     	; 0xa6 <read_adc>
+		show_adc(value);     // LED 출력 제어
+  f2:	e5 df       	rcall	.-54     	; 0xbe <show_adc>
+  f4:	fd cf       	rjmp	.-6      	; 0xf0 <main+0x6>
+
+000000f6 <_exit>:
+  f6:	f8 94       	cli
+
+000000f8 <__stop_program>:
+  f8:	ff cf       	rjmp	.-2      	; 0xf8 <__stop_program>
